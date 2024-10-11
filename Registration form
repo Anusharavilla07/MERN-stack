@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            line-height: 30px;
+            text-align: left;
+            padding: 0 300px 50px;
+        }
+        body{
+            border-width: medium;
+            border-style:solid;
+            border-color: black;
+            text-align: justify;
+        }
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">Registration form</h1>
+    <p>Of course all  submitted information is kept in the stictest confidence<br>you always retain control of your information with D.W simpson&co<br><b>our services are always at no cost to you</b></p>
+    <form>
+       <label for="Name"><b>Name*</b></label>
+       <input type="text" name="Name" required><br>
+
+       <label for="Address"><b>Address*</b></label>
+       <input type="text" name="Address" required><br>
+      
+       <label for="City"><b>City*</b></label>
+       <input type="text" name="City" required>
+       <label for="State/Province"><b>State/province*</b></label>
+       <input type="text" name="state/province" required><br>
+
+       <label for="Zipcode"><b>Zipcode*</b></label>
+       <input type="text" name="Zipcode" required><br>
+      
+       <label for="Country"><b>Company*</b></label>
+       <input type="text" name="Company" required><br>
+      
+       <label for="phone"><b>Phone:(H)*</b></label>
+       <input type="text" name="phone" required>
+       <label for="Fax"><b>Fax*</b></label>
+       <input type="text" name="Fax" required><br>
+
+       <label for="phone1"><b>phone:(w)</b></label>
+       <input type="text" name="phone1"><br>
+      
+       <label for="E-mail"><b>E-mail*</b></label>
+       <input type="text" name="E-mail" required><br>
+      
+       <label for="Company name"><b>Company Name:</b>(optional)</label>
+       <input type="text" name="Company name"><br>
+      
+       <div>
+        <label for="desired region"><b>Desired Region</b>:</label>
+        <input name="desired region" list="cities" placeholder="desired region">
+        <datalist id="cities">
+            <option value="Hyderabad">
+                <option value="Bengulore">
+                    <option value="Chennai">
+                        <option value="Mumbai">
+                            <option value="Delhi">
+                               
+                           
+        </datalist>
+                <label for="other"><b>other</b></label>
+                <input type="text" name="other"><br>
+
+                </div>
+        <label for="Designation"><b>Professional Designation Earned:</b></label><br>
+        <input type="checkbox" id="college student" name="Designation" value="college student">
+        <label for="college student">college student</label>
+        <input type="checkbox" id="Experienced" name="Designation" value="Experienced">
+        <label for="collage student">Experienced</label>
+        <input type="checkbox" id="Employee" name="Designation" value="Employee">
+        <label for="collage student">Employee</label><br>
+                 
+        <label for="other Designation"><b>Other Designation:</b></label>
+        <input type="text" name="other Designation"><br>
+    <div style="text-align:center;">
+        <input type="submit" value="Submit">
+    </div>
+    </form>
+</body>
+</html>
