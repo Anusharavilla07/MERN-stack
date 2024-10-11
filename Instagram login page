@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login</title>
+    <link rel="stylesheet" type="text/css" href="instacss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="page">
+            <div class="title">Instagram</div>
+            <form>
+                <input type="text" placeholder="Phone number, username, or email">
+                <input type="password" placeholder="Password">
+                <button type="submit">Log In</button>
+                <div class="option">OR</div>
+            </form>
+            <div class="fblink">
+                <span class="fab fa-facebook"></span>
+                <a href="#">Log in with Facebook</a>
+            </div>
+            <div class="forget-id">
+                <a href="#">Forgot password?</a>
+            </div>
+        </div>
+        <div class="signup">
+            <p text-align="center">Don't have an account? <a href="#">Sign up</a></p>
+        </div>
+    </div>
+</body>
+</html>
+
+--------------------------------------------------------------------------------------------------------------------------------------
+#css code for instagram login page
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Full viewport height */
+    background-color: #fafafa;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh; /* Ensures the container takes up the full viewport height */
+}
+
+.page {
+    width: 350px;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    padding: 40px 40px 20px;
+    margin-bottom: 10px;
+    text-align: center; /* Centers text inside the page */
+}
+
+.title {
+    font-family:'pacifico',cursive;
+    color: #262626;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    margin-bottom: 10px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 14px;
+    background-color: #fafafa;
+}
+
+form input:focus {
+    outline: none;
+    border: 1px solid #b2b2b2;
+}
+
+form button {
+    background-color: #0095f6;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:active {
+    background-color: #0078d4;
+}
+
+form .option {
+    position: relative;
+    color: #8e8e8e;
+    font-size: 13px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+form .option::before,
+form .option::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    height: 1px;
+    background-color: #dbdbdb;
+    width: 40%;
+}
+
+form .option::before {
+    left: 0;
+}
+
+form .option::after {
+    right: 0;
+}
+
+.fblink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.fblink span {
+    font-size: 18px;
+    color: #385185;
+    margin-right: 10px;
+}
+
+.fblink a {
+    font-size: 14px;
+    font-weight: bold;
+    color: #385185;
+    text-decoration: none;
+}
+
+.fblink a:hover {
+    text-decoration: underline;
+}
+
+.forget-id {
+    margin-top: 15px;
+}
+
+.forget-id a {
+    font-size: 12px;
+    color: #00376b;
+    text-decoration: none;
+}
+
+.forget-id a:hover {
+    text-decoration: underline;
+}
+
+.signup {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    padding: 20px;
+    width: 350px;
+}
+
+.signup p {
+    font-size: 14px;
+    color: #262626;
+}
+
+.signup a {
+    color: #0095f6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup a:hover {
+    text-decoration: underline;
+}
